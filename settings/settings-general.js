@@ -6,5 +6,5 @@ define({
   "seriesTitle_en": "",
   "seriesTitle_fr": "",
   "addToolboxPage": [],
-  "editMode": true
+  "editMode": false
 });
