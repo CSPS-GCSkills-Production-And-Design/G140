@@ -1,0 +1,1631 @@
+<!-- top banner with side-by-side underneath -->
+<section class="row">
+	<section class="col-md-12 LOM-frame ui-sortable highlight" id="LOMfr_1"><section class="LOM-element placeholder default ui-sortable highlight" data-lom-element="text" id="LOM_el_1" data-lom-subtype="title"><h1><div class="LOM-editable" id="LOM-edit-1"><p>La gestion du rendement&nbsp;– Mise en situation</p></div></h1>
+<!-- default Object, spawns an object picker -->
+
+</section><section class="LOM-element" data-lom-element="custom" id="LOM_el_2">
+	<!-- This object was made for loving you baby -->
+	
+	
+	
+	<section class="col-md-12 no-print" role="content">
+	<div class="qs-start-activity">
+		<div class="encadrage col-md-8">
+			<div class="instructions">
+				<h2 class="pointer">Testez vos connaissances</h2>
+				<p>Voici quelques renseignements utiles avant de commencer.</p>
+				<p>Vous pouvez réaliser l’exercice plus d’une fois afin de connaître les conséquences liées à chacune des décisions.</p>
+				<p>Au cours de l’exercice, vous serez appelé à prendre les meilleures décisions possible en matière de gestion du rendement d’après une situation donnée.</p>
+				<p>Des points vous seront accordés pour chaque décision&nbsp;: 1&nbsp;point pour une mauvaise décision, 5&nbsp;points pour une décision acceptable et 10&nbsp;points pour une décision optimale.</p>
+				<p>Une fois l’exercice commencé, vous ne pourrez <em>pas</em> revenir en arrière.</p>
+				<!-- <button onClick="initCheckpoint()">Commencer l’évaluation<span class="glyphicon glyphicon-play"></span></button>-->
+				<button onClick="initCheckpoint();" class="btn btn-question">Commencer l’exercice<span class="glyphicon glyphicon-play"></span></button>
+			</div>
+		</div>
+
+		<!--***** IMAGE *****-->
+		<div class="col-md-1">&nbsp;</div>
+		<figure class="col-md-3 mrgn-bttm-lg">
+			<img src="content/medias/images/m2b.png" alt="" class="img-responsive center-block" />
+		</figure>
+	</div>
+	<div id="slides">
+
+		<!--slide 1 / 3.2--------------------------------------------------------------------------------------
+
+		BRANCHING 1
+
+		------------------------------------------------------------------------------------------------------>
+		<div class="slide" id="slide1">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="col-xs-2 col-md-3 pstn-bttm-xs pstn-lft-md pstn-lft-xs" src="content/medias/images/s1-b1-main.png" alt="" />
+				<p class="col-xs-10 col-md-9 col-xs-push-2 col-md-push-3">Vous gérez une équipe de dix analystes des politiques. Vous occupez ce poste depuis neuf mois.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<p class="col-xs-9">Julie, l’une de vos employés (AS&#8209;01), revient au travail après un congé de maternité d’une durée d’un an.</p>
+				<img class="col-xs-3 pstn-bttm-xs" src="content/medias/images/s1-b2-julie.png" alt="" />
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-lft-xs mrgn-lft-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<img class="col-md-4" src="content/medias/images/s1-b3-main.png" alt="" />
+				<p class="col-md-4 col-md-pull-1">Vous ne l’avez jamais rencontrée, mais votre directrice estime qu’elle constitue un atout pour l’équipe.</p>
+				<img class="col-md-4 col-md-pull-2 pull-bottom" src="content/medias/images/s1-b3-juliedirectrice.png" alt="" />
+				<button onclick="javascript:showQuestion($(this).closest('.slide'),$(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<!-- THIS IS A QUESTION -->
+			<div class="question" id="q1">
+				<form>
+					<fieldset class="wb-eqht">
+						<!-- QUESTION MAIN TEXT -->
+						<div class="well col-md-4 col-sm-12 backSlide">
+							<p>
+								<legend>Vous laissez quelques jours à Julie pour lui permettre de s’installer, puis vous décidez&nbsp;:<br>
+								Sélectionnez l’une des réponses</legend>
+							</p>
+						</div>
+						<!-- QUESTION ANSWERS -->
+						<div class="well answers col-sm-12 col-md-8">
+							<ol class="row">
+								<li>
+									<input id="q1-a" name="q1" type="radio" value="1" data-next="2">
+									<label for="q1-a">de lui laisser un certain temps pour qu’elle s’adapte à son retour au travail.</label>
+								</li>
+								<li>
+									<input id="q1-b" name="q1" type="radio" value="5" data-next="3">
+									<label for="q1-b">d’organiser une rencontre pour établir une nouvelle entente de rendement.</label>
+								</li>
+								<li>
+									<input id="q1-c" name="q1" type="radio" value="10" data-next="4">
+									<label for="q1-c">d’organiser une rencontre afin qu’elle vous parle de ses intérêts et de ses besoins en apprentissage et que vous puissiez discuter de la façon dont elle peut contribuer au travail de l’équipe.</label>
+								</li>
+							</ol>
+							<!--<p><a class="btn btn-default" onClick="javascript:popflag=true;verifyAnswer($(this).closest('.answers'),1);" href="#tableau-resultats">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p-->
+							<p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),1);" href="#tableau-resultats">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<!--slide 2 / 3.3------------------------------------------------------------------------------------->
+		<div class="slide" id="slide2">
+			<div class="well col-md-12 checkpoint backSlide">
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s1-b1-main.png">
+				</div>
+				<p class="col-md-3">Deux semaines plus tard, vous pensez que Julie est bien installée. Tout semble bien aller.</p>
+				<div class="col-md-3" style="height:205px;">
+					<img class="pstn-bttm-xs img-responsive" src="content/medias/images/s2-b1-colleague.png" alt="" />
+				</div>
+				<div class="col-md-2">
+					<p class="triangle-right right"><span class="wb-inv">Julie dit à un collègue: </span>Je suis heureuse d’être de retour au travail!</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="pstn-bttm-xs" src="content/medias/images/s2-b1-julie.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<img class="img-responsive checkpoint-lft" src="content/medias/images/s2-b2-main.png" alt="" />
+				<p class="col-md-4 col-md-offset-1 oval-thought"><span class="wb-inv">Vous pensez :</span>Je me demande quelles sont ses responsabilités.</p>
+				<p class="col-md-6 col-md-offset-1">À bien y réfléchir, vous ne  savez pas exactement sur <em>quel dossier</em> elle travaille.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-5">Vous décidez d’organiser une rencontre afin qu’elle vous parle de ses intérêts, de ses besoins en apprentissage et de la façon dont elle croit contribuer au travail de l’équipe. Vous souhaitez en profiter pour lui parler de vos attentes à l’égard du travail, des tâches connexes et des objectifs organisationnels.</p>
+				<img class="pstn-bttm-xs" src="content/medias/images/s2-b3-julie.png" alt="" />
+				<div class="col-md-3 col-md-offset-1">
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Vous dites: </span>Que dirais&#8209;tu de lundi à 9&nbsp;h&nbsp;30?<br><br></p>
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Julie répond: </span>Très bien!</p>
+				</div>
+				<img class="pstn-bttm-xs" src="content/medias/images/s2-b3-main.png" alt="" />
+				<button onclick="javascript:nextSlide='4';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+		</div>
+
+		<!--slide 3 / 3.4------------------- NOT DONE--------------------------------------------------------->
+		<div class="slide" id="slide3">
+			<div class="well col-md-8 checkpoint backSlide">
+				<div class="col-md-4" style="height:205px;">	
+					<img class="pstn-bttm-xs img-responsive" src="content/medias/images/s3-b1-juliemain.png" alt="" />
+				</div>
+				<p class="col-md-8">Vous rencontrez Julie la première semaine suivant son retour au travail afin de remplir sa nouvelle entente de rendement pour l’année. Elle est encore un peu dépassée par son retour au travail.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-4 checkpoint backSlide" style="min-height:217px">
+				<p class="col-md-12">Lorsque vous lui demandez de définir quelques objectifs de travail pour l’année, elle répond qu’elle ne sait pas exactement quoi écrire.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-lft-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-7">Elle commence à vous poser des questions pour savoir ce sur quoi l’équipe travaille. Elle veut également savoir quelle peut être, selon vous, sa contribution au travail de l’équipe.Vous prenez un peu de recul et discutez avec Julie de la façon dont les activités de l’équipe s’inscrivent dans les priorités et les objectifs de l’organisation. </p>
+				<div class="col-md-3" style="height:205px;">
+					<img class="pstn-bttm-xs img-responsive" src="content/medias/images/s3-b3-juliemain.png" alt="" />
+				</div>
+				<div class="col-md-2">
+					<p class="oval-thought"><span class="wb-inv">Vous pensez: </span>Je me demande quelles sont ses responsabilités.</p>
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-lft-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-4">Par la suite, Julie vous parle d’elle, de ses intérêts, de ses besoins en apprentissage et de la façon dont elle pense contribuer au travail de l’équipe.</p>
+				<div class="col-md-1" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s3-b4-julie.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<div class="col-md-12">
+						<p class="triangle-right right"><span class="wb-inv">Vous dites: </span>Que dirais&#8209;tu de lundi à 9&nbsp;h&nbsp;30?<br><br></p>
+					</div>
+					<div class="col-md-12">
+						<p class="triangle-right left"><span class="wb-inv">Julie répond: </span>Très bien!</p>
+					</div>
+				</div>
+				<div class="col-md-1" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s3-b4-main.png" alt="" />
+				</div>
+				<p class="col-md-3">Vous organisez une rencontre de suivi afin de lui faire connaître votre propre entente de rendement et d’établir la sienne.</p>
+				<button onclick="javascript:nextSlide='4';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+		</div>
+
+		<!--slide 4 / 3.5--------------------------------------------------------------------------------------
+
+		BRANCHING 2
+
+		------------------------------------------------------------------------------------------------------>
+		<div class="slide" id="slide4">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s4-b1-juliemain.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Deux mois se sont écoulés depuis que Julie et vous avez établi ensemble son entente de rendement pour l’année.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<p class="col-md-9">Vous êtes convaincu qu’elle sait ce qu’elle doit faire et qu’elle comprend en quoi son travail s’inscrit dans les objectifs de la direction générale.</p>
+				<img class="img-responsive checkpoint-rght" src="content/medias/images/s4-b2-main.png" alt="" />
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-lft-xs mrgn-lft-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-2">Vous avez décidé de la laisser respirer un peu, mais vous commencez à entendre des plaintes de la part de vos analystes des politiques.</p>
+				<div class="col-md-3" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s4-b2-colleague.png" alt="" />
+				</div>
+				<div class="col-md-4">
+					<div class="col-md-12">
+						<p class="triangle-right right"><span class="wb-inv">Un collègue dit: </span>J’en ai assez d’avoir à attendre que Julie termine sa partie des rapports.</p>
+					</div>
+					<div class="col-md-12">
+						<p class="triangle-right left"><span class="wb-inv">Un autre collègue répond: </span>Je comprends! Regarde, elle arrive enfin. Encore en retard!</p>
+					</div>
+				</div>
+				<div class="col-md-3" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s4-b2-colleague2.png" alt="" />
+				</div>
+				<button onclick="javascript:showQuestion($(this).closest('.slide'),$(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<!-- THIS IS A QUESTION -->
+			<div class="question" id="q2">
+				<form>
+					<fieldset class="wb-eqht">
+						<!-- QUESTION MAIN TEXT -->
+						<div class="well col-md-4 backSlide">
+							<p><legend>Compte tenu de la situation, vous décidez&nbsp;:<br>Sélectionnez l’une des réponses</legend></p>
+						</div>
+						<!-- QUESTION ANSWERS -->
+						<div class="well answers col-md-8">
+							<ol class="row">
+								<li>
+									<input id="q2-a" name="q2" type="radio" value="10" data-next="5">
+									<label for="q2-a">de discuter avec Julie et de lui faire part de vos observations en vous en tenant aux faits.</label>
+								</li>
+								<li>
+									<input id="q2-b" name="q2" type="radio" value="5" data-next="7">
+									<label for="q2-b">de commencer dès maintenant à monter un dossier sur son rendement afin d’être prêt au cas où la situation se détériorerait.</label>
+								</li>
+								<li>
+									<input id="q2-c" name="q2" type="radio" value="1" data-next="6">
+									<label for="q2-c">de lui faire part de vos observations par écrit et de les intégrer à son entente de rendement.</label>
+								</li>
+							</ol>
+							<!--p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),2);" href="content/module2/feedback.html">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p-->
+							<p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),2);" href="#tableau-resultats">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<!--slide 5 / 3.6------------------------------------------------------------------------------------->
+		<div class="slide" id="slide5">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s5-b1-juliemain.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Julie semble d’abord sur la défensive.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s5-b2-juliemain.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Vous vous en tenez aux faits et expliquez qu’à titre de gestionnaire, vous devez savoir comment se portent vos employés.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s5-b3-julie.png" alt="" />
+				<div class="col-md-7 col-md-offset-3">
+					<p class="col-md-12">Julie explique ce qui suit&nbsp;:</p>
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Julie dit: </span>J’ai plus de difficulté à m’adapter à mon retour au travail que ce à quoi je m’attendais.</p>
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s5-b3-julie.png" alt="" />
+				<div class="col-md-7 col-md-offset-3">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Julie continue: </span>J’arrive en retard parce que la garderie ouvre à 7&nbsp;h&nbsp;30. À cause de la circulation, je ne peux pas arriver au bureau pour 8&nbsp;h.</p>
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<img class="pstn-bttm-xs" src="content/medias/images/s5-b5-main.png" alt="" />
+				<div class="col-md-3 col-md-offset-1">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous répondez: </span>Très bien Julie. Avant de terminer notre rencontre, dis&#8209;moi s’il y a quelque chose que je peux faire pour t’aider.</p>
+				</div>
+				<div class="col-md-3 col-md-offset-1">
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond à son tour: </span>Je ne vois rien pour le moment. Je vais simplement redoubler d’efforts pour m’assurer de faire mon travail.</p>
+				</div>
+				<img class="pstn-bttm-xs" src="content/medias/images/s5-b5-julie.png" alt="" />
+				<button onclick="javascript:nextSlide='8';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+		</div>
+
+		<!--slide 6 / 3.7------------------------------------------------------------------------------------->
+		<div class="slide" id="slide6">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b1-main.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Vous prenez l’entente de rendement de Julie et commencez à évaluer son rendement en fonction des critères établis.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b2-juliemain.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Vous convoquez Julie à une rencontre et lui remettez son entente de rendement. Elle est surprise et choquée.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-5">Elle vous demande pourquoi, après seulement deux mois, vous l’évaluez par rapport à son entente de rendement. Vous vous rendez compte que vous ne lui avez pas donné de rétroaction régulière et n’avez pas discuté avec elle.</p>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 oval-thought"><span class="wb-inv">Vous pensez: </span>Hmmm... J’ai agi trop vite.</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie dit: </span>Pourquoi n’es-tu pas venu me parler d’abord?</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-5">Vous changez de tactique et entamez un dialogue avec Julie. Ainsi, vous apprenez qu’elle a plus de difficulté à s’adapter à son retour au travail que ce à quoi elle s’attendait. Elle vous apprend également que la garderie ouvre seulement à 7&nbsp;h&nbsp;30. Elle a donc de la difficulté à arriver au travail pour 8&nbsp;h.</p>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous demandez: </span>Est&#8209;ce que je peux faire quelque chose pour t’aider?</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond: </span>Je vais simplement redoubler d’efforts pour m’assurer de faire mon travail.</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="" />
+				</div>
+				<button onclick="javascript:nextSlide='8';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+		</div>
+
+		<!--slide 7 / 3.8------------------------------------------------------------------------------------->
+		<div class="slide" id="slide7">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b1-main.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Vous montez un dossier au sujet du rendement de Julie, consignez les jours où elle est en retard et inscrivez le nombre de plaintes formulées à son endroit.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s7-b2-main.png" alt="" />
+				<p class="col-md-9 col-md-offset-3">Plusieurs semaines passent, et les plaintes continuent. Votre dossier sur Julie prend du volume. Vous décidez de lui parler.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-5">Julie est choquée lorsque vous lui dites que vous avez commencé à monter un dossier sur son rendement. Elle vous demande pourquoi vous ne lui avez donné aucune rétroaction et avez commencé tout de suite à monter un dossier.</p>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 oval-thought"><span class="wb-inv">Vous pensez: </span>J’ai agi trop vite.</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie dit: </span>As&#8209;tu vérifié les faits? Pourquoi n’es&#8209;tu pas venu me parler?</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-5">En discutant avec Julie, vous apprenez qu’elle a plus de difficulté à s’adapter à son retour au travail que ce à quoi elle s’attendait. Elle vous apprend également que la garderie ouvre seulement à 7&nbsp;h&nbsp;30. Avec la circulation, elle a donc de la difficulté à arriver au travail pour 8&nbsp;h.</p>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous lui demandez: </span>Est&#8209;ce que je peux faire quelque chose pour t’aider?</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond: </span>Je vais simplement redoubler d’efforts pour m’assurer de faire mon travail.</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="" />
+				</div>
+				<button onclick="javascript:nextSlide='8';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+		</div>
+
+		<!--slide 8 / 3.9--------------------------------------------------------------------------------------
+
+		BRANCHING 3
+
+		------------------------------------------------------------------------------------------------------>
+		<div class="slide" id="slide8">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s8-b1-julie.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Malgré votre intervention rapide, le rendement de Julie continue de se détériorer.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<div class="col-md-2" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="" />
+				</div>
+				<p class="col-md-5">Elle est souvent en retard, elle ne respecte pas les échéances, et la qualité de son travail ne répond pas aux attentes.</p>
+				<div class="col-md-2" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 oval-thought"><span class="wb-inv">Vous pensez: </span>Hmmmm...  Encore en retard!</p>
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-6">Lors d’une rencontre, vous lui avez donné de la rétroaction au sujet de la qualité de son travail. Vous avez fait ressortir ce qu’elle devait améliorer et lui avez demandé si elle avait besoin de soutien ou de formation supplémentaire.</p>
+				<div class="col-md-3" style="height:194px;">
+					<img class="pstn-bttm-xs img-responsive" src="content/medias/images/s8-b3-juliemain.png" alt="" />
+				</div>
+				<button onclick="javascript:showQuestion($(this).closest('.slide'),$(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<!-- THIS IS A QUESTION -->
+			<div class="question" id="q3">
+				<form>
+					<fieldset class="wb-eqht">
+						<!-- QUESTION MAIN TEXT -->
+						<div class="well col-md-4 backSlide">
+							<p><legend>Sans revirement apparent, vous décidez&nbsp;:<br>Sélectionnez l’une des réponses</legend></p>
+						</div>
+						<!-- QUESTION ANSWERS -->
+						<div class="well answers col-md-8">
+							<ol class="row">
+								<li>
+									<input id="q3-a" name="q3" type="radio" value="10" data-next="10">
+									<label for="q3-a">de prendre des mesures disciplinaires, car il s’agit d’une conséquence logique étant donné ses problèmes de rendement.</label>
+								</li>
+								<li>
+									<input id="q3-b" name="q3" type="radio" value="5" data-next="11">
+									<label for="q3-b">d’organiser une rencontre officielle pour discuter de son rendement.</label>
+								</li>
+								<li>
+									<input id="q3-c" name="q3" type="radio" value="1" data-next="9">
+									<label for="q3-c">de revoir son entente de rendement en réduisant la complexité de ses objectifs professionnels.</label>
+								</li>
+							</ol>
+							<!--p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),3);" href="content/module2/feedback.html">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p-->
+							<p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),3);" href="#tableau-resultats">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<!--slide 9 / 3.10------------------------------------------------------------------------------------>
+		<div class="slide" id="slide9">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s9-b1-juliemain.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Vous présentez l’entente de rendement révisée à Julie.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s9-b2-juliemain.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Vous convoquez Julie à une rencontre et lui remettez son entente de rendement. Elle est surprise et choquée.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s9-b3-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 oval-thought"><span class="wb-inv">Vous pensez: </span>Je crois qu’il est temps de changer de stratégie.</p>
+				</div>
+				<div class="col-md-4">
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie demande: </span>Pourquoi as&#8209;tu décidé de réviser immédiatement mon entente de rendement au lieu de discuter du problème avec moi?</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide" style="display: block;">
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous répondez: </span>Pouvons-nous organiser une rencontre pour demain? J’aimerais que nous en parlions le plus tôt possible.</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond à son tour: </span>Bien sûr. Mieux vaut en parler le plus tôt possible.</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 oval-thought"><span class="wb-inv">Julie pense: </span>Je ne peux pas croire ce qui arrive!</p>
+				</div>
+				<button onclick="javascript:nextSlide='11';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+		</div>
+
+		<!--slide 10 / 3.15----------------------------------------------------------------------------------->
+		<div class="slide" id="slide10">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b1-main.png" alt="" />
+				<p class="col-md-8 col-md-offset-4">Vous consultez le site Web du SCT afin de savoir comment traiter les problèmes de discipline, puis vous téléphonez à votre conseillère en relations de travail.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<div class="col-md-3" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-main.png" alt="" />
+				</div>
+				<p class="col-md-6">Votre conseillère en relations de travail vous demande de lui exposer les faits et de lui transmettre la documentation pertinente.</p>
+				<div class="col-md-3" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-main.png" alt="" />
+				</div>
+				<div class="col-md-6">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous dites: </span>Combien de fois avez-vous donné de la rétroaction à Julie et lui avez-vous parlé dans le cadre d’une rencontre officielle sur le rendement?</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Votre conseillère en relations de travail répond: </span>J’ai seulement organisé une séance de rétroaction avec elle, et je ne lui ai jamais parlé dans le cadre d’une rencontre officielle sur le rendement.</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b4-hr.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide" style="display: block;">
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">La conseillère en relations de travail dit: </span>Connaissez-vous la différence entre des comportements coupables et des comportements non coupables?</p>
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous répondez: </span>Comportement coupable et non coupable? Non, pas vraiment.</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b4-hr.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">La conseillère en relations de travail répond: </span>Le fait d’arriver en retard chaque jour peut entraîner des mesures disciplinaires, mais la situation est plus complexe qu’elle ne le semble. Des comportements non coupables peuvent être à l’origine d’un travail dont la qualité est insatisfaisante.</p>
+				</div>
+				<button onclick="javascript:nextSlide='11';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+		</div>
+
+		<!--slide 11 / 3.16------------------------------------------------------------------------------------
+
+		BRANCHING 4
+
+		------------------------------------------------------------------------------------------------------>
+		<div class="slide" id="slide11">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s11-b1-juliemain.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Lors de votre rencontre avec Julie, vous établissez ensemble un plan d’action pour la remettre sur le bon chemin. Vous la rencontrez de façon régulière afin de vérifier les résultats.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s11-b2-julie.png" alt="" />
+				<p class="col-md-7 col-md-offset-5">Julie et vous convenez qu’elle doit suivre un cours afin de renforcer ses compétences en informatique.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-8 col-md-offset-2">Six mois se sont écoulés depuis votre rencontre sur le rendement. Vous avez l’impression de vous trouver dans des montagnes russes. Le rendement et l’assiduité de Julie s’améliorent pendant un mois, puis la situation se détériore de nouveau pour atteindre un seuil inacceptable.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s11-b4-director.png" alt="" />
+				</div>
+				<div class="col-md-4">
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Vous dites à votre directrice: </span>Quelque chose ne va pas avec Julie.<br>Qu’est&#8209;ce que je fais de mal?</p>
+					<p class="col-md-12 triangle-right left2"><span class="wb-inv">Votre directrice répond: </span>J’ai l’impression que vous faites ce qu’il faut. La gestion du rendement des employés n’est pas facile, mais elle fait partie de votre travail. Faites moi savoir si vous avez besoin d’aide.</p>
+				</div>
+				<div class="col-md-6" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s11-b4-main.png" alt="" />
+				</div>
+				<button onclick="javascript:showQuestion($(this).closest('.slide'),$(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<!-- THIS IS A QUESTION -->
+			<div class="question" id="q4">
+				<form>
+					<fieldset class="wb-eqht" style="width:100%">
+						<!-- QUESTION MAIN TEXT -->
+						<div class="well col-md-4 backSlide">
+							<p><legend>Selon vous, son comportement peut être qualifié&nbsp;:<br>Sélectionnez l’une des réponses</legend></p>
+						</div>
+						<!-- QUESTION ANSWERS -->
+						<div class="well answers col-md-8">
+							<ol class="row">
+								<li>
+									<input id="q4-a" name="q4" type="radio" value="5" data-next="13">
+									<label for="q4-a">de comportement non coupable.</label>
+								</li>
+								<li>
+									<input id="q4-b" name="q4" type="radio" value="5" data-next="12">
+									<label for="q4-b">de comportement coupable.</label>
+								</li>
+								<li>
+									<input id="q4-c" name="q4" type="radio" value="10" data-next="13">
+									<label for="q4-c">de comportement coupable et non coupable.</label>
+								</li>
+							</ol>
+							<!--p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),4);" href="content/module2/feedback.html">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p-->
+							<p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),4);" href="#tableau-resultats">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+		<!--slide 12 / 3.15----------------------------------------------------------------------------------->
+		<div class="slide" id="slide12">
+			<div class="well col-md-5 checkpoint backSlide" style="height:224px;">
+				<div class="col-md-3" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b1-main.png" alt="" />
+				</div>
+				<p class="col-md-6">Vous consultez votre conseillère en relations de travail, qui confirme que le fait d’être en retard au travail constitue un comportement coupable.</p>
+				<div class="col-md-3" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+			<div class="well col-md-7 checkpoint backSlide" style="height:224px;">
+				<div class="col-md-2" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b1-main.png" alt="" />
+				</div>
+				<div class="col-md-7">
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Votre conseillère en relations de travail dit: </span>Le reste de la situation est plus complexe. Julie omet-elle sciemment de respecter les délais et produit elle délibérément des rapports qui ne respectent pas les normes de qualité?</p>
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous répondez: </span>Je ne crois pas qu’elle agit délibérément. Elle affirme subir beaucoup de stress.</p>
+				</div>
+				<div class="col-md-3" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+			<div class="well col-md-4 checkpoint backSlide" style="height:234px;">
+				<div class="col-md-8">
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Votre conseillère en relations de travail demande: </span>Pourrait&#8209;on demander à Julie de signer un document énonçant les attentes de base à son égard (heures de travail, dîner, pauses) afin de corriger le problème de son arrivée tardive au travail?</p>
+				</div>
+				<div class="col-md-4" style="height:215px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-8 checkpoint backSlide" style="height:234px;">
+				<div class="col-md-2" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b1-main.png" alt="" />
+				</div>
+				<div class="col-md-7">
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Votre conseillère en relations de travail ajoute: </span>Vous vous reportez au site Web du SCT et consultez les sections qui traitent du Programme d’aide aux employés, des mesures d’adaptation et des évaluations de l’aptitude au travail.</p>
+				</div>
+				<div class="col-md-3" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+			<div class="well col-md-12 checkpoint backSlide" style="height:255px;">
+				<p class="col-md-5">Finalement, Julie prend un congé de quatre semaines pour cause de stress. Vous créez avec elle un plan de retour au travail et discutez de la façon dont elle aimerait communiquer avec vous pendant son absence et du moment auquel elle prévoit le faire. Finalement, elle revient au travail après six semaines et demande une diminution de ses heures de travail. Elle souhaite également commencer à travailler plus tard le matin.</p>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous dites: </span>Nous emploierons une approche par équipe pour la préparation des documents.</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond: </span>Merci! Je peux ainsi tirer profit de mes forces et demander l’aide des membres de mon équipe dans les secteurs où je dois m’améliorer.</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b5-julie.png" alt="" />
+				</div>
+				<p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),0);" href="#tableau-resultats">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+			</div>
+		</div>
+
+		<!--slide 13 / 3.13 / 3.14---------------------------------------------------------------------------->
+		<div class="slide" id="slide13">
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b1-main.png" alt="" />
+				<p class="col-xs-7 col-md-offset-5">Vous vous reportez au site Web du SCT et consultez les sections qui traitent du Programme d’aide aux employés, des mesures d’adaptation et des évaluations de l’aptitude au travail.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-6 checkpoint backSlide">
+				<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b2-maindirector.png" alt="" />
+				<p class="col-xs-7 col-xs-offset-5">Vous faites savoir à votre directrice que la situation sera transmise à un autre niveau. Elle vous pose des questions au sujet des retards de Julie.</p>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-5 checkpoint backSlide">
+				<p class="col-xs-7">Vous établissez les priorités et décidez de vous occuper d’abord du problème de stress. Au besoin, vous vous occuperez des retards de Julie à un moment ultérieur.</p>
+				<div class="col-xs-5" style="height:193px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b3-main.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-7 checkpoint backSlide">
+				<div class="col-md-3" style="height:192px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b4-julie.png" alt="" />
+				</div>
+				<div class="col-md-6">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Julie dit: </span>Merci d’avoir approuvé mon congé de quatre semaines pour cause de stress.</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Vous répondez: </span>Préparons un plan en vue de ton retour au travail.</p>
+				</div>
+				<div class="col-md-3" style="height:192px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b4-main.png" alt="" />
+				</div>
+				<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+			</div>
+
+			<div class="well col-md-12 checkpoint backSlide">
+				<p class="col-md-5">Vous créez avec elle un plan de retour au travail et discutez de la façon dont elle aimerait communiquer avec vous pendant son absence et du moment auquel elle prévoit le faire. Finalement, elle revient au travail après six semaines et demande une diminution de ses heures de travail. Elle souhaite également commencer à travailler plus tard le matin.</p>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="" />
+				</div>
+				<div class="col-md-3">
+					<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous dites: </span>Nous emploierons une approche par équipe pour la préparation des documents.</p>
+					<p class="col-md-12 triangle-right right"><span class="wb-inv">Vous répondez: </span>Ainsi, je peux tirer profit de mes forces et demander l’aide des membres de mon équipe dans les secteurs où je dois m’améliorer.</p>
+				</div>
+				<div class="col-md-2" style="height:205px;">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b5-julie.png" alt="" />
+				</div>
+				<p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),0);" href="#tableau-resultats">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span></a></p>
+			</div>
+		</div>
+	</div>
+		
+		</section>		
+		
+		
+	<!-- VERSION QUARANTAINE -->
+		
+	
+	<!-- <section class="col-md-12 no-print" role="content">
+		<div class="qs-start-activity">
+				<div class="encadrage col-md-8">
+					<div class="instructions">
+						<div><h2>Testez vos connaissances</h2>
+
+<p>Voici quelques renseignements utiles avant de commencer.</p>
+
+<p>Vous pouvez réaliser l’exercice plus d’une fois afin de connaître les conséquences liées à chacune des décisions.</p>
+
+<p>Au cours de l’exercice, vous serez appelé à prendre les meilleures décisions possible en matière de gestion du rendement d’après une situation donnée.</p>
+
+<p>Des points vous seront accordés pour chaque décision&nbsp;: 1&nbsp;point pour une mauvaise décision, 5&nbsp;points pour une décision acceptable et 10&nbsp;points pour une décision optimale.</p>
+
+<p>Une fois l’exercice commencé, vous ne pourrez <em>pas</em> revenir en arrière.</p>
+<!-- <button onClick="initCheckpoint()">Commencer l’évaluation<span class="glyphicon glyphicon-play"></span></button>--><!--</div>
+<button onclick="initCheckpoint()" class="btn btn-question">Commencer l'exercice<span class="glyphicon glyphicon-play"></span></button>
+					</div>
+				</div>
+			<!--***** IMAGE *****--><!--
+			<div class="col-md-1">&nbsp;</div>
+			<figure class="col-md-3 mrgn-bttm-lg">
+				<img src="content/medias/images/m2b.png" alt="" class="img-responsive center-block">
+			</figure>
+		</div>
+		<div id="slides" style="display: none;">
+
+			<!--slide 1 / 3.2--------------------------------------------------------------------------------------
+
+			BRANCHING 1
+
+			------------------------------------------------------------------------------------------------------>
+			<!-- <div class="slide" id="slide1">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="col-xs-2 col-md-3 pstn-bttm-xs pstn-lft-md pstn-lft-xs" src="content/medias/images/s1-b1-main.png" alt="">
+					<p class="col-xs-10 col-md-9 col-xs-push-2 col-md-push-3"></p><p>Vous gérez une équipe de dix analystes des politiques. Vous occupez ce poste depuis neuf mois.</p>
+<p></p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<p class="col-xs-9"></p><p>Julie, l’une de vos employés (AS‑01), revient au travail après un congé de maternité d’une durée d’un an.</p>
+<p></p>
+					<img class="col-xs-3 pstn-bttm-xs" src="content/medias/images/s1-b2-julie.png" alt="">
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-lft-xs mrgn-lft-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<img class="col-md-4" src="content/medias/images/s1-b3-main.png" alt="">
+					<p class="col-md-4 col-md-pull-1"></p><p>Vous ne l’avez jamais rencontrée, mais votre directrice estime qu’elle constitue un atout pour l’équipe.</p>
+<p></p><p>Vous ne l’avez jamais rencontrée, mais votre directrice estime qu’elle constitue un atout pour l’équipe.</p>
+<p></p>
+					<img class="col-md-4 col-md-pull-2 pull-bottom" src="content/medias/images/s1-b3-juliedirectrice.png" alt="">
+					<button onclick="javascript:showQuestion($(this).closest('.slide'),$(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<!-- THIS IS A QUESTION -->
+				<!-- <div class="question" id="q1">
+					<form>
+						<fieldset class="wb-eqht">
+							<!-- QUESTION MAIN TEXT 
+							<div class="well col-md-4 col-sm-12 backSlide">
+								<p>
+									<legend>Vous laissez quelques jours à Julie pour lui permettre de s’installer, puis vous décidez&nbsp;:<br>
+									Sélectionnez l’une des réponses</legend>
+								</p>
+							</div>
+							<!-- QUESTION ANSWERS 
+							<div class="well answers col-sm-12 col-md-8">
+								<ol class="row">
+									<li>
+										<input id="q1-a" name="q1" type="radio" value="1" data-next="2">
+										<label for="q1-a"><p>de lui laisser un certain temps pour qu’elle s’adapte à son retour au travail.</p>
+</label>
+									</li>
+									<li>
+										<input id="q1-b" name="q1" type="radio" value="5" data-next="3">
+										<label for="q1-b"><p>d’organiser une rencontre pour établir une nouvelle entente de rendement.</p>
+</label>
+									</li>
+									<li>
+										<input id="q1-c" name="q1" type="radio" value="10" data-next="4">
+										<label for="q1-c"><p>d’organiser une rencontre afin qu’elle vous parle de ses intérêts et de ses besoins en apprentissage et que vous puissiez discuter de la façon dont elle peut contribuer au travail de l’équipe.</p>
+</label>
+									</li>
+								</ol>
+								<!--<p><a class="btn btn-default" onClick="javascript:popflag=true;verifyAnswer($(this).closest('.answers'),1);" href="#tableau-resultats">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p
+								<p><a class="btn btn-default wb-lbx wb-lbx-inited" onclick="javascript:verifyAnswer($(this).closest('.answers'),1);" href="#tableau-resultats" id="wb-auto-14">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+			<!--slide 2 / 3.3-----------------------------------------------------------------------------------
+			<div class="slide" id="slide2">
+				<div class="well col-md-12 checkpoint backSlide">
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s1-b1-main.png" alt="">
+					</div>
+					<p class="col-md-3">Deux semaines plus tard, vous pensez que Julie est bien installée. Tout semble bien aller.</p>
+					<div class="col-md-3" style="height:205px;">
+						<img class="pstn-bttm-xs img-responsive" src="content/medias/images/s2-b1-colleague.png" alt="">
+					</div>
+					<div class="col-md-2">
+						<p class="triangle-right right"><span class="wb-inv">Julie dit à un collègue: </span>Je suis heureuse d’être de retour au travail!</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="pstn-bttm-xs" src="content/medias/images/s2-b1-julie.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<img class="img-responsive checkpoint-lft" src="content/medias/images/s2-b2-main.png" alt="">
+					<p class="col-md-4 col-md-offset-1 oval-thought"><span class="wb-inv">Vous pensez :</span>Je me demande quelles sont ses responsabilités.</p>
+					<p class="col-md-6 col-md-offset-1">À bien y réfléchir, vous ne  savez pas exactement sur <em>quel dossier</em> elle travaille.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-5">Vous décidez d’organiser une rencontre afin qu’elle vous parle de ses intérêts, de ses besoins en apprentissage et de la façon dont elle croit contribuer au travail de l’équipe. Vous souhaitez en profiter pour lui parler de vos attentes à l’égard du travail, des tâches connexes et des objectifs organisationnels.</p>
+					<img class="pstn-bttm-xs" src="content/medias/images/s2-b3-julie.png" alt="">
+					<div class="col-md-3 col-md-offset-1">
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Vous dites: </span>Que dirais‑tu de lundi à 9&nbsp;h&nbsp;30?<br><br></p>
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Julie répond: </span>Très bien!</p>
+					</div>
+					<img class="pstn-bttm-xs" src="content/medias/images/s2-b3-main.png" alt="">
+					<button onclick="javascript:nextSlide='4';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+			</div>
+
+			<!--slide 3 / 3.4------------------- NOT DONE-------------------------------------------------------
+			<div class="slide" id="slide3">
+				<div class="well col-md-8 checkpoint backSlide">
+					<div class="col-md-4" style="height:205px;">	
+						<img class="pstn-bttm-xs img-responsive" src="content/medias/images/s3-b1-juliemain.png" alt="">
+					</div>
+					<p class="col-md-8">Vous rencontrez Julie la première semaine suivant son retour au travail afin de remplir sa nouvelle entente de rendement pour l’année. Elle est encore un peu dépassée par son retour au travail.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-4 checkpoint backSlide" style="min-height:217px">
+					<p class="col-md-12">Lorsque vous lui demandez de définir quelques objectifs de travail pour l’année, elle répond qu’elle ne sait pas exactement quoi écrire.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-lft-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-7">Elle commence à vous poser des questions pour savoir ce sur quoi l’équipe travaille. Elle veut également savoir quelle peut être, selon vous, sa contribution au travail de l’équipe.Vous prenez un peu de recul et discutez avec Julie de la façon dont les activités de l’équipe s’inscrivent dans les priorités et les objectifs de l’organisation. </p>
+					<div class="col-md-3" style="height:205px;">
+						<img class="pstn-bttm-xs img-responsive" src="content/medias/images/s3-b3-juliemain.png" alt="">
+					</div>
+					<div class="col-md-2">
+						<p class="oval-thought"><span class="wb-inv">Vous pensez: </span>Je me demande quelles sont ses responsabilités.</p>
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-lft-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-4">Par la suite, Julie vous parle d’elle, de ses intérêts, de ses besoins en apprentissage et de la façon dont elle pense contribuer au travail de l’équipe.</p>
+					<div class="col-md-1" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s3-b4-julie.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<div class="col-md-12">
+							<p class="triangle-right right"><span class="wb-inv">Vous dites: </span>Que dirais‑tu de lundi à 9&nbsp;h&nbsp;30?<br><br></p>
+						</div>
+						<div class="col-md-12">
+							<p class="triangle-right left"><span class="wb-inv">Julie répond: </span>Très bien!</p>
+						</div>
+					</div>
+					<div class="col-md-1" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s3-b4-main.png" alt="">
+					</div>
+					<p class="col-md-3">Vous organisez une rencontre de suivi afin de lui faire connaître votre propre entente de rendement et d’établir la sienne.</p>
+					<button onclick="javascript:nextSlide='4';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+			</div>
+
+			<!--slide 4 / 3.5--------------------------------------------------------------------------------------
+
+			BRANCHING 2
+
+			----------------------------------------------------------------------------------------------------
+			<div class="slide" id="slide4">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s4-b1-juliemain.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Deux mois se sont écoulés depuis que Julie et vous avez établi ensemble son entente de rendement pour l’année.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<p class="col-md-9">Vous êtes convaincu qu’elle sait ce qu’elle doit faire et qu’elle comprend en quoi son travail s’inscrit dans les objectifs de la direction générale.</p>
+					<img class="img-responsive checkpoint-rght" src="content/medias/images/s4-b2-main.png" alt="">
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-lft-xs mrgn-lft-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-2">Vous avez décidé de la laisser respirer un peu, mais vous commencez à entendre des plaintes de la part de vos analystes des politiques.</p>
+					<div class="col-md-3" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s4-b2-colleague.png" alt="">
+					</div>
+					<div class="col-md-4">
+						<div class="col-md-12">
+							<p class="triangle-right right"><span class="wb-inv">Un collègue dit: </span>J’en ai assez d’avoir à attendre que Julie termine sa partie des rapports.</p>
+						</div>
+						<div class="col-md-12">
+							<p class="triangle-right left"><span class="wb-inv">Un autre collègue répond: </span>Je comprends! Regarde, elle arrive enfin. Encore en retard!</p>
+						</div>
+					</div>
+					<div class="col-md-3" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s4-b2-colleague2.png" alt="">
+					</div>
+					<button onclick="javascript:showQuestion($(this).closest('.slide'),$(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<!-- THIS IS A QUESTION 
+				<div class="question" id="q2">
+					<form>
+						<fieldset class="wb-eqht">
+							<!-- QUESTION MAIN TEXT 
+							<div class="well col-md-4 backSlide">
+								<p><legend>Compte tenu de la situation, vous décidez&nbsp;:<br>Sélectionnez l’une des réponses</legend></p>
+							</div>
+							<!-- QUESTION ANSWERS 
+							<div class="well answers col-md-8">
+								<ol class="row">
+									<li>
+										<input id="q2-a" name="q2" type="radio" value="10" data-next="5">
+										<label for="q2-a">de discuter avec Julie et de lui faire part de vos observations en vous en tenant aux faits.</label>
+									</li>
+									<li>
+										<input id="q2-b" name="q2" type="radio" value="5" data-next="7">
+										<label for="q2-b">de commencer dès maintenant à monter un dossier sur son rendement afin d’être prêt au cas où la situation se détériorerait.</label>
+									</li>
+									<li>
+										<input id="q2-c" name="q2" type="radio" value="1" data-next="6">
+										<label for="q2-c">de lui faire part de vos observations par écrit et de les intégrer à son entente de rendement.</label>
+									</li>
+								</ol>
+								<!--p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),2);" href="content/module2/feedback.html">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p
+								<p><a class="btn btn-default wb-lbx wb-lbx-inited" onclick="javascript:verifyAnswer($(this).closest('.answers'),2);" href="#tableau-resultats" id="wb-auto-15">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+			<!--slide 5 / 3.6-----------------------------------------------------------------------------------
+			<div class="slide" id="slide5">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s5-b1-juliemain.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Julie semble d’abord sur la défensive.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s5-b2-juliemain.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Vous vous en tenez aux faits et expliquez qu’à titre de gestionnaire, vous devez savoir comment se portent vos employés.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s5-b3-julie.png" alt="">
+					<div class="col-md-7 col-md-offset-3">
+						<p class="col-md-12">Julie explique ce qui suit&nbsp;:</p>
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Julie dit: </span>J’ai plus de difficulté à m’adapter à mon retour au travail que ce à quoi je m’attendais.</p>
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s5-b3-julie.png" alt="">
+					<div class="col-md-7 col-md-offset-3">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Julie continue: </span>J’arrive en retard parce que la garderie ouvre à 7&nbsp;h&nbsp;30. À cause de la circulation, je ne peux pas arriver au bureau pour 8&nbsp;h.</p>
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<img class="pstn-bttm-xs" src="content/medias/images/s5-b5-main.png" alt="">
+					<div class="col-md-3 col-md-offset-1">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous répondez: </span>Très bien Julie. Avant de terminer notre rencontre, dis‑moi s’il y a quelque chose que je peux faire pour t’aider.</p>
+					</div>
+					<div class="col-md-3 col-md-offset-1">
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond à son tour: </span>Je ne vois rien pour le moment. Je vais simplement redoubler d’efforts pour m’assurer de faire mon travail.</p>
+					</div>
+					<img class="pstn-bttm-xs" src="content/medias/images/s5-b5-julie.png" alt="">
+					<button onclick="javascript:nextSlide='8';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+			</div>
+
+			<!--slide 6 / 3.7-----------------------------------------------------------------------------------
+			<div class="slide" id="slide6">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b1-main.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Vous prenez l’entente de rendement de Julie et commencez à évaluer son rendement en fonction des critères établis.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b2-juliemain.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Vous convoquez Julie à une rencontre et lui remettez son entente de rendement. Elle est surprise et choquée.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-5">Elle vous demande pourquoi, après seulement deux mois, vous l’évaluez par rapport à son entente de rendement. Vous vous rendez compte que vous ne lui avez pas donné de rétroaction régulière et n’avez pas discuté avec elle.</p>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 oval-thought"><span class="wb-inv">Vous pensez: </span>Hmmm... J’ai agi trop vite.</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie dit: </span>Pourquoi n’es-tu pas venu me parler d’abord?</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-5">Vous changez de tactique et entamez un dialogue avec Julie. Ainsi, vous apprenez qu’elle a plus de difficulté à s’adapter à son retour au travail que ce à quoi elle s’attendait. Elle vous apprend également que la garderie ouvre seulement à 7&nbsp;h&nbsp;30. Elle a donc de la difficulté à arriver au travail pour 8&nbsp;h.</p>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous demandez: </span>Est‑ce que je peux faire quelque chose pour t’aider?</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond: </span>Je vais simplement redoubler d’efforts pour m’assurer de faire mon travail.</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="">
+					</div>
+					<button onclick="javascript:nextSlide='8';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+			</div>
+
+			<!--slide 7 / 3.8-----------------------------------------------------------------------------------
+			<div class="slide" id="slide7">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b1-main.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Vous montez un dossier au sujet du rendement de Julie, consignez les jours où elle est en retard et inscrivez le nombre de plaintes formulées à son endroit.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s7-b2-main.png" alt="">
+					<p class="col-md-9 col-md-offset-3">Plusieurs semaines passent, et les plaintes continuent. Votre dossier sur Julie prend du volume. Vous décidez de lui parler.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-5">Julie est choquée lorsque vous lui dites que vous avez commencé à monter un dossier sur son rendement. Elle vous demande pourquoi vous ne lui avez donné aucune rétroaction et avez commencé tout de suite à monter un dossier.</p>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 oval-thought"><span class="wb-inv">Vous pensez: </span>J’ai agi trop vite.</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie dit: </span>As‑tu vérifié les faits? Pourquoi n’es‑tu pas venu me parler?</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-5">En discutant avec Julie, vous apprenez qu’elle a plus de difficulté à s’adapter à son retour au travail que ce à quoi elle s’attendait. Elle vous apprend également que la garderie ouvre seulement à 7&nbsp;h&nbsp;30. Avec la circulation, elle a donc de la difficulté à arriver au travail pour 8&nbsp;h.</p>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous lui demandez: </span>Est‑ce que je peux faire quelque chose pour t’aider?</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond: </span>Je vais simplement redoubler d’efforts pour m’assurer de faire mon travail.</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="">
+					</div>
+					<button onclick="javascript:nextSlide='8';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+			</div>
+
+			<!--slide 8 / 3.9--------------------------------------------------------------------------------------
+
+			BRANCHING 3
+
+			----------------------------------------------------------------------------------------------------
+			<div class="slide" id="slide8">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s8-b1-julie.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Malgré votre intervention rapide, le rendement de Julie continue de se détériorer.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<div class="col-md-2" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="">
+					</div>
+					<p class="col-md-5">Elle est souvent en retard, elle ne respecte pas les échéances, et la qualité de son travail ne répond pas aux attentes.</p>
+					<div class="col-md-2" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 oval-thought"><span class="wb-inv">Vous pensez: </span>Hmmmm...  Encore en retard!</p>
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-6">Lors d’une rencontre, vous lui avez donné de la rétroaction au sujet de la qualité de son travail. Vous avez fait ressortir ce qu’elle devait améliorer et lui avez demandé si elle avait besoin de soutien ou de formation supplémentaire.</p>
+					<div class="col-md-3" style="height:194px;">
+						<img class="pstn-bttm-xs img-responsive" src="content/medias/images/s8-b3-juliemain.png" alt="">
+					</div>
+					<button onclick="javascript:showQuestion($(this).closest('.slide'),$(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<!-- THIS IS A QUESTION 
+				<div class="question" id="q3">
+					<form>
+						<fieldset class="wb-eqht">
+							<!-- QUESTION MAIN TEXT 
+							<div class="well col-md-4 backSlide">
+								<p><legend>Sans revirement apparent, vous décidez&nbsp;:<br>Sélectionnez l’une des réponses</legend></p>
+							</div>
+							<!-- QUESTION ANSWERS 
+							<div class="well answers col-md-8">
+								<ol class="row">
+									<li>
+										<input id="q3-a" name="q3" type="radio" value="10" data-next="10">
+										<label for="q3-a">de prendre des mesures disciplinaires, car il s’agit d’une conséquence logique étant donné ses problèmes de rendement.</label>
+									</li>
+									<li>
+										<input id="q3-b" name="q3" type="radio" value="5" data-next="11">
+										<label for="q3-b">d’organiser une rencontre officielle pour discuter de son rendement.</label>
+									</li>
+									<li>
+										<input id="q3-c" name="q3" type="radio" value="1" data-next="9">
+										<label for="q3-c">de revoir son entente de rendement en réduisant la complexité de ses objectifs professionnels.</label>
+									</li>
+								</ol>
+								<!--p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),3);" href="content/module2/feedback.html">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p
+								<p><a class="btn btn-default wb-lbx wb-lbx-inited" onclick="javascript:verifyAnswer($(this).closest('.answers'),3);" href="#tableau-resultats" id="wb-auto-16">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+			<!--slide 9 / 3.10----------------------------------------------------------------------------------
+			<div class="slide" id="slide9">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s9-b1-juliemain.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Vous présentez l’entente de rendement révisée à Julie.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s9-b2-juliemain.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Vous convoquez Julie à une rencontre et lui remettez son entente de rendement. Elle est surprise et choquée.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s9-b3-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 oval-thought"><span class="wb-inv">Vous pensez: </span>Je crois qu’il est temps de changer de stratégie.</p>
+					</div>
+					<div class="col-md-4">
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie demande: </span>Pourquoi as‑tu décidé de réviser immédiatement mon entente de rendement au lieu de discuter du problème avec moi?</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide" style="display: block;">
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous répondez: </span>Pouvons-nous organiser une rencontre pour demain? J’aimerais que nous en parlions le plus tôt possible.</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond à son tour: </span>Bien sûr. Mieux vaut en parler le plus tôt possible.</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-julie.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 oval-thought"><span class="wb-inv">Julie pense: </span>Je ne peux pas croire ce qui arrive!</p>
+					</div>
+					<button onclick="javascript:nextSlide='11';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+			</div>
+
+			<!--slide 10 / 3.15---------------------------------------------------------------------------------
+			<div class="slide" id="slide10">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b1-main.png" alt="">
+					<p class="col-md-8 col-md-offset-4">Vous consultez le site Web du SCT afin de savoir comment traiter les problèmes de discipline, puis vous téléphonez à votre conseillère en relations de travail.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<div class="col-md-3" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-main.png" alt="">
+					</div>
+					<p class="col-md-6">Votre conseillère en relations de travail vous demande de lui exposer les faits et de lui transmettre la documentation pertinente.</p>
+					<div class="col-md-3" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b3-main.png" alt="">
+					</div>
+					<div class="col-md-6">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous dites: </span>Combien de fois avez-vous donné de la rétroaction à Julie et lui avez-vous parlé dans le cadre d’une rencontre officielle sur le rendement?</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Votre conseillère en relations de travail répond: </span>J’ai seulement organisé une séance de rétroaction avec elle, et je ne lui ai jamais parlé dans le cadre d’une rencontre officielle sur le rendement.</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b4-hr.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide" style="display: block;">
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">La conseillère en relations de travail dit: </span>Connaissez-vous la différence entre des comportements coupables et des comportements non coupables?</p>
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous répondez: </span>Comportement coupable et non coupable? Non, pas vraiment.</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b4-hr.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">La conseillère en relations de travail répond: </span>Le fait d’arriver en retard chaque jour peut entraîner des mesures disciplinaires, mais la situation est plus complexe qu’elle ne le semble. Des comportements non coupables peuvent être à l’origine d’un travail dont la qualité est insatisfaisante.</p>
+					</div>
+					<button onclick="javascript:nextSlide='11';showNextSlide();" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+			</div>
+
+			<!--slide 11 / 3.16------------------------------------------------------------------------------------
+
+			BRANCHING 4
+
+			----------------------------------------------------------------------------------------------------
+			<div class="slide" id="slide11">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s11-b1-juliemain.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Lors de votre rencontre avec Julie, vous établissez ensemble un plan d’action pour la remettre sur le bon chemin. Vous la rencontrez de façon régulière afin de vérifier les résultats.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s11-b2-julie.png" alt="">
+					<p class="col-md-7 col-md-offset-5">Julie et vous convenez qu’elle doit suivre un cours afin de renforcer ses compétences en informatique.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-8 col-md-offset-2">Six mois se sont écoulés depuis votre rencontre sur le rendement. Vous avez l’impression de vous trouver dans des montagnes russes. Le rendement et l’assiduité de Julie s’améliorent pendant un mois, puis la situation se détériore de nouveau pour atteindre un seuil inacceptable.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s11-b4-director.png" alt="">
+					</div>
+					<div class="col-md-4">
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Vous dites à votre directrice: </span>Quelque chose ne va pas avec Julie.<br>Qu’est‑ce que je fais de mal?</p>
+						<p class="col-md-12 triangle-right left2"><span class="wb-inv">Votre directrice répond: </span>J’ai l’impression que vous faites ce qu’il faut. La gestion du rendement des employés n’est pas facile, mais elle fait partie de votre travail. Faites moi savoir si vous avez besoin d’aide.</p>
+					</div>
+					<div class="col-md-6" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s11-b4-main.png" alt="">
+					</div>
+					<button onclick="javascript:showQuestion($(this).closest('.slide'),$(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<!-- THIS IS A QUESTION 
+				<div class="question" id="q4">
+					<form>
+						<fieldset class="wb-eqht" style="width:100%">
+							<!-- QUESTION MAIN TEXT 
+							<div class="well col-md-4 backSlide">
+								<p><legend>Selon vous, son comportement peut être qualifié&nbsp;:<br>Sélectionnez l’une des réponses</legend></p>
+							</div>
+							<!-- QUESTION ANSWERS 
+							<div class="well answers col-md-8">
+								<ol class="row">
+									<li>
+										<input id="q4-a" name="q4" type="radio" value="5" data-next="13">
+										<label for="q4-a">de comportement non coupable.</label>
+									</li>
+									<li>
+										<input id="q4-b" name="q4" type="radio" value="5" data-next="12">
+										<label for="q4-b">de comportement coupable.</label>
+									</li>
+									<li>
+										<input id="q4-c" name="q4" type="radio" value="10" data-next="13">
+										<label for="q4-c">de comportement coupable et non coupable.</label>
+									</li>
+								</ol>
+								<!--p><a class="btn btn-default wb-lbx" onClick="javascript:verifyAnswer($(this).closest('.answers'),4);" href="content/module2/feedback.html">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p
+								<p><a class="btn btn-default wb-lbx wb-lbx-inited" onclick="javascript:verifyAnswer($(this).closest('.answers'),4);" href="#tableau-resultats" id="wb-auto-17">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+
+			<!--slide 12 / 3.15---------------------------------------------------------------------------------
+			<div class="slide" id="slide12">
+				<div class="well col-md-5 checkpoint backSlide" style="height:224px;">
+					<div class="col-md-3" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b1-main.png" alt="">
+					</div>
+					<p class="col-md-6">Vous consultez votre conseillère en relations de travail, qui confirme que le fait d’être en retard au travail constitue un comportement coupable.</p>
+					<div class="col-md-3" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+				<div class="well col-md-7 checkpoint backSlide" style="height:224px;">
+					<div class="col-md-2" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b1-main.png" alt="">
+					</div>
+					<div class="col-md-7">
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Votre conseillère en relations de travail dit: </span>Le reste de la situation est plus complexe. Julie omet-elle sciemment de respecter les délais et produit elle délibérément des rapports qui ne respectent pas les normes de qualité?</p>
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous répondez: </span>Je ne crois pas qu’elle agit délibérément. Elle affirme subir beaucoup de stress.</p>
+					</div>
+					<div class="col-md-3" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+				<div class="well col-md-4 checkpoint backSlide" style="height:234px;">
+					<div class="col-md-8">
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Votre conseillère en relations de travail demande: </span>Pourrait‑on demander à Julie de signer un document énonçant les attentes de base à son égard (heures de travail, dîner, pauses) afin de corriger le problème de son arrivée tardive au travail?</p>
+					</div>
+					<div class="col-md-4" style="height:215px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-8 checkpoint backSlide" style="height:234px;">
+					<div class="col-md-2" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b1-main.png" alt="">
+					</div>
+					<div class="col-md-7">
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Votre conseillère en relations de travail ajoute: </span>Vous vous reportez au site Web du SCT et consultez les sections qui traitent du Programme d’aide aux employés, des mesures d’adaptation et des évaluations de l’aptitude au travail.</p>
+					</div>
+					<div class="col-md-3" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s10-b2-hr.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+				<div class="well col-md-12 checkpoint backSlide" style="height:255px;">
+					<p class="col-md-5">Finalement, Julie prend un congé de quatre semaines pour cause de stress. Vous créez avec elle un plan de retour au travail et discutez de la façon dont elle aimerait communiquer avec vous pendant son absence et du moment auquel elle prévoit le faire. Finalement, elle revient au travail après six semaines et demande une diminution de ses heures de travail. Elle souhaite également commencer à travailler plus tard le matin.</p>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous dites: </span>Nous emploierons une approche par équipe pour la préparation des documents.</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Julie répond: </span>Merci! Je peux ainsi tirer profit de mes forces et demander l’aide des membres de mon équipe dans les secteurs où je dois m’améliorer.</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b5-julie.png" alt="">
+					</div>
+					<p><a class="btn btn-default wb-lbx wb-lbx-inited" onclick="javascript:verifyAnswer($(this).closest('.answers'),0);" href="#tableau-resultats" id="wb-auto-18">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span> </a></p>
+				</div>
+			</div>
+
+			<!--slide 13 / 3.13 / 3.14-------------------------------------------------------------------------
+			<div class="slide" id="slide13">
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b1-main.png" alt="">
+					<p class="col-xs-7 col-md-offset-5">Vous vous reportez au site Web du SCT et consultez les sections qui traitent du Programme d’aide aux employés, des mesures d’adaptation et des évaluations de l’aptitude au travail.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-6 checkpoint backSlide">
+					<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b2-maindirector.png" alt="">
+					<p class="col-xs-7 col-xs-offset-5">Vous faites savoir à votre directrice que la situation sera transmise à un autre niveau. Elle vous pose des questions au sujet des retards de Julie.</p>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-5 checkpoint backSlide">
+					<p class="col-xs-7">Vous établissez les priorités et décidez de vous occuper d’abord du problème de stress. Au besoin, vous vous occuperez des retards de Julie à un moment ultérieur.</p>
+					<div class="col-xs-5" style="height:193px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b3-main.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-7 checkpoint backSlide">
+					<div class="col-md-3" style="height:192px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b4-julie.png" alt="">
+					</div>
+					<div class="col-md-6">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Julie dit: </span>Merci d’avoir approuvé mon congé de quatre semaines pour cause de stress.</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Vous répondez: </span>Préparons un plan en vue de ton retour au travail.</p>
+					</div>
+					<div class="col-md-3" style="height:192px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s13-b4-main.png" alt="">
+					</div>
+					<button onclick="javascript:nextCheckpoint($(this).closest('.well.checkpoint'));" class="btn-scenario btn-lg pull-right pstn-bttm-xs mrgn-bttm-sm pstn-rght-xs mrgn-rght-sm"><span class="glyphicon glyphicon-play"></span><span class="wb-inv">Appuyez ici pour afficher la suite.</span></button>
+				</div>
+
+				<div class="well col-md-12 checkpoint backSlide">
+					<p class="col-md-5">Vous créez avec elle un plan de retour au travail et discutez de la façon dont elle aimerait communiquer avec vous pendant son absence et du moment auquel elle prévoit le faire. Finalement, elle revient au travail après six semaines et demande une diminution de ses heures de travail. Elle souhaite également commencer à travailler plus tard le matin.</p>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s6-b4-main.png" alt="">
+					</div>
+					<div class="col-md-3">
+						<p class="col-md-12 triangle-right left"><span class="wb-inv">Vous dites: </span>Nous emploierons une approche par équipe pour la préparation des documents.</p>
+						<p class="col-md-12 triangle-right right"><span class="wb-inv">Vous répondez: </span>Ainsi, je peux tirer profit de mes forces et demander l’aide des membres de mon équipe dans les secteurs où je dois m’améliorer.</p>
+					</div>
+					<div class="col-md-2" style="height:205px;">
+						<img class="img-responsive pstn-bttm-xs" src="content/medias/images/s12-b5-julie.png" alt="">
+					</div>
+					<p><a class="btn btn-default wb-lbx wb-lbx-inited" onclick="javascript:verifyAnswer($(this).closest('.answers'),0);" href="#tableau-resultats" id="wb-auto-19">Soumettre&nbsp;<span class="glyphicon glyphicon-play"></span></a></p>
+				</div>
+			</div>
+		</div>
+		<!--slides
+		</section>-->
+		
+		
+		
+		
+		
+		
+		
+		
+
+</section></section>
+
+
+</section>
+<section class="row">
+<section class="LOM-element" data-lom-element="custom">
+	
+	</section>
+</section>
+<section class="row">
+	<section id="tableau-resultats" class="mfp-hide modal-dialog modal-content overlay-def tableau no-print">
+		<header class="modal-header">
+			<h2 class="modal-title">Résultats</h2>
+		</header>
+		<div class="modal-body">
+			<div>
+				<table class="col-md-12">
+					<caption class="wb-inv">Résultats</caption>
+					<tbody><tr>
+						<th class="brdr-rght">Étape&nbsp;1</th>
+						<th>Étape&nbsp;2</th>
+					</tr>
+					<tr class="brdr-bttm">
+						<td class="feedback answer_learner1 brdr-rght"></td>
+						<td class="feedback answer_learner2"></td>
+					</tr>
+					<tr>
+						<th class="brdr-rght">Étape&nbsp;3</th>
+						<th>Étape&nbsp;4</th>
+					</tr>
+					<tr>
+						<td class="feedback answer_learner3 brdr-rght"></td>
+						<td class="feedback answer_learner4"></td>
+					</tr>
+				</tbody></table>
+				<p id="finalfeedbacktext"></p>
+			</div>
+		</div>
+	</section>
+</section>
+<script>
+	var answer_learner1 = "";
+	var answer_learner2 = "";
+	var answer_learner3 = "";
+	var answer_learner4 = "";
+	var currentSlide = 1;
+	var currentAnswer = "";
+	var totalscore = 0;
+
+	$(document).ready(function(e) {
+		$document = wb.doc
+		$('#slides').hide();
+
+		$(".wb-lbx").on( "mfpClose", function(event) {
+			if (typeof popflag != 'undefined') {
+				if (popflag) {
+					popflag = 0;
+					showNextSlide();
+				}
+			}
+		});
+		
+		
+	});
+
+	function initCheckpoint() {
+		$('.qs-start-activity').hide();
+		$('#slide'+currentSlide).show();
+		$('#slide'+currentSlide + ' .checkpoint:first').show();
+		//$('.slide').show();
+		//$('.checkpoint').show();
+		$('#slides').show();
+	}
+
+	function nextCheckpoint(currentCheckpoint) {
+		$(currentCheckpoint).find('button').hide();
+		$(currentCheckpoint).next('.well.checkpoint').show();
+		$( ".wb-eqht" ).trigger( "wb-update.wb-eqht" ); // garder les cases de la même hauteur
+	}
+
+	function showQuestion(currentSlide,currentCheckpoint) {
+		$(currentCheckpoint).find('button').hide();
+		$(currentSlide).find('form').show();
+		$(".wb-eqht").trigger("wb-update.wb-eqht"); // garder les cases de la même hauteur
+	}
+
+	function showNextSlide() {
+		$('#slide'+currentSlide).hide();
+		$('.checkpoint').hide();
+		$('.slide').hide();
+		// calculate next slide
+		/*switch(currentAnswer) {
+			case "1":	currentSlide++;
+				break;
+			case "5":	currentSlide = currentSlide+2;
+				break;
+			case "10":currentSlide = currentSlide+3;
+				break;
+		}*/
+		currentSlide=nextSlide;
+		nextSlide = 0;
+		//alert("currentSlide is now: " + currentSlide);
+		$('#slide'+currentSlide).show();
+		$('#slide'+currentSlide+ ' .checkpoint:first').show();
+	}
+
+	function verifyAnswer(answers, question) {
+	
+		if (question == 0) {
+			popflag = 0;
+			//finalfeedbacktext
+			$("#tableau-resultats>header.modal-header>.modal-title").html("Résultat final&nbsp;: " + totalscore + "&nbsp;points");
+			var textfinal = "Vos efforts sont appréciés!<br>Si vous le souhaitez, vous pouvez refaire l’exercice de mise en situation.<br><a class='btn btn-default wb-lbx' onClick='javascript:masterStructure.loadTarget();' href='#' style='float:right;'>Recommencer</a>"
+			$("#finalfeedbacktext").html(textfinal)
+		} else {
+			//CSPS-TD-START FIX TO WARN USERS FROM NO SELECTION WITHOUT REBUILDING EVERYTHING, USING ORIGINAL WB-LBX
+			if($(answers).find('input:checked').length === 0){
+				$('#tableau-resultats .modal-body').hide()
+				$('#tableau-resultats h2.modal-title').text('Veuillez sélectionner une réponse.');
+				return false;
+			}else{
+				$('#tableau-resultats .modal-body').show()
+				$('#tableau-resultats h2.modal-title').text('Résultats');
+			}
+			/*CSPS-TD-END FIX*/
+			var ischecked=$(answers).find('input:checked')
+			var currentAnswer = $(ischecked).val();
+			popflag = 1;
+			if ($(answers).find('input:checked').length>0) {
+				nextSlide = $(answers).find('input:checked').attr("data-next")
+				var retroaction = currentAnswer;
+				switch (currentAnswer) {
+				case ("1"):
+					retroaction += '&nbsp;point (mauvaise décision)';
+					break;
+				case ("5"):
+					retroaction += '&nbsp;points (décision acceptable)';
+					break;
+				case ("10"):
+					retroaction += '&nbsp;points (décision optimale)';
+					break;
+				default:
+					break;
+				}
+				totalscore+=parseInt(currentAnswer, 10);
+				$(".answer_learner"+question).prepend(retroaction)
+			} else {
+				popflag = 0;
+			}
+		}
+	}
+</script>

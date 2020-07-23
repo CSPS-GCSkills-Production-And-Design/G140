@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: "Futura_md_bt_medium";
+    src: url("../fonts/Futura/ufonts.com_futura_md_bt_medium.eot"); 
+    src: 
+         url("fonts/Futura/ufonts.com_futura_md_bt_medium.eot?#iefix") format('embedded-opentype'),
+         url("fonts/Futura/ufonts.com_futura-md-bt-medium.woff") format("woff"),
+         url("fonts/Futura/ufonts.com_futura_md_bt_medium.ttf") format("truetype");      
+
+}
+
+
+body,html,h1,h2,h3,h4,p{
+	font-family:'Futura_md_bt_medium' ,Helvetica, Arial, sans-serif;
+}

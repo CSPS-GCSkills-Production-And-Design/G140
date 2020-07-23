@@ -1,0 +1,150 @@
+	/* ----------------------------------------------------------------------------
+----------------------------------------SPLASH
+---------------------------------------------------------------------------- */
+
+
+	#splashframetext{
+		width:924px;
+		min-height:668px;
+		display:block;
+		overflow:hidden;
+		background:url('g140/bg_splash.jpg') no-repeat;
+	}
+.obfuscated{
+	display:none;
+	}
+
+#manualpop{
+	margin:8% 5%;
+	}
+#manualpop>h1{
+	margin:5% 2% 0% 5%;
+	font-family:'Futura_md_bt_medium', Helvetica, sans-serif;
+	text-align:right;
+	}	
+#manualpop>span{
+	visibility:hidden;
+	}
+#manualpop>a{
+	background:url('g140/bg_arrowsplash.jpg') 12px 12px no-repeat;
+	display:block;
+	color:#427daa;
+	text-decoration:none;
+	font-weight:600;
+	font-size:1.3em;
+	font-family:"Futura_md_bt_medium", Arial, Helvetica, sans-serif;
+	text-align:right;
+	float:right;
+	padding:12px 5px 12px 35px;
+	margin-right:2%;
+
+	}	
+#manualpop>a:hover{
+	color:#65a4d5;
+	}	
+
+	
+/*     Launch Page         */
+
+body.launchpage{
+   overflow:hidden;
+   min-height:100%;
+   margin:0;
+   padding:0;
+   background-color: #fff;
+   background-image:url(g140/back_splash.jpg);
+   background-repeat:no-repeat;
+   background-position: center;
+   background-size:cover;
+   color: rgb(76, 80, 74);
+   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(wavy_green/back_splash.jpg,sizingMethod='scale')";
+   font-family: 'Futura_md_bt_medium', Arial, sans-serif;
+}
+
+	#splashframetext{
+		width:924px;
+		min-height:668px;
+		display:block;
+		overflow:hidden;
+	}
+.obfuscated{
+	display:none;
+	}
+
+#manualpop{
+	margin:8% 5%;
+	display: none;
+	}
+#manualpop>h1{
+	margin:5% 2% 0% 5%;	
+	text-align:right;
+	}	
+#manualpop>span{
+	visibility:hidden;
+	}
+#manualpop>a{
+	display:block;
+	color:#427daa;
+	text-decoration:none;
+	font-weight:600;
+	font-size:1.3em;
+	font-family: "Futura_md_bt_medium","Myriad Pro","Helvetica Neue", Helvetica, Arial, sans-serif;	
+	text-align:right;
+	float:right;
+	padding:12px 5px 12px 35px;
+	margin-right:2%;
+
+	}	
+#manualpop>a:hover{
+	color:#65a4d5;
+	}	
+
+#launch-btn{
+position:relative;
+font-size:1em;font-size: 1.5em;color: #4c504a;
+display:block;/* margin:auto; */text-decoration: none;color: rgb(76, 80, 74);  font-size: 41px;text-shadow: 0.25em 0.75em 0.85em #fff, -0.4em 0.4em 0.75em #fff, 0.4em -0.4em 0.75em #fff, -0.4em -0.4em 0.5em #fff;}
+
+#title-area{
+text-align:center;width: 60%;      float: left;border-right: thin solid #000;      margin: 0 20px 0px 0px;font-size: 1.5em;text-shadow: 0.2em -0.25em 0.85em #fff, 0em 0.25em 0.75em #fff, 0.4em -0.3em 0.75em #fff, 0em -0.3em 0.5em #fff;}
+#launch-area{
+    width: 31%;
+    float: left;
+    margin: 0 0px 0 20px;
+    }
+
+
+#wordmark,#canada-logo{
+position:fixed;
+width:98%;
+padding-left:1%;
+padding-right:1%;
+background-color:#fff;
+padding-top:.5em;
+padding-bottom:.5em;
+}
+
+#canada-logo{bottom:0px;
+text-align:right;}
+#wordmark{top:0px;}
+
+#splash-content{
+font-size:1.5em;
+display:block;
+text-align:center;margin-top: 17.5%;padding: 0 20px 0 20px;
+top:0%;
+/* width:75%; *//* position:absolute; *//* top:40%; *//* -webkit-transform: translateY(-40%); *//* transform:translateY(-40%); */}
+
+
+@media screen and (max-width: 767px) {
+
+.launchpage h1{font-size: 1.7em;}
+}
+#launch-placement{    
+	line-height: 4.5em;
+    vertical-align: middle;
+  }
+  .missing_content{
+    background-color: rgba(165, 42, 42, 0.24);
+    color: #000;
+    }
+	
