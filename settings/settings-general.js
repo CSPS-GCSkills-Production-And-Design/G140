@@ -5,6 +5,7 @@ define({
   "courseTitle_fr": "Gestion du rendement pour le gouvernement du Canada (G140)",
   "seriesTitle_en": "",
   "seriesTitle_fr": "",
-  "addToolboxPage": [],
+  "addToolboxPage": [{"name_en":"Download course", "name_fr":"Télécharger le cours", "filename_en":"print_version.pdf", "filename_fr":"print_version_fr.pdf"}],
+  showResources: false,
   "editMode": false
 });
