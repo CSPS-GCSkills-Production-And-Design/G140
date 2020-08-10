@@ -25,7 +25,11 @@ define([
 
 	/* is called on every page load, great for adding custom code to all pages*/
 	function pageLoaded() {
-		//console.log("Interactions:pageLoaded");
+		if(masterStructure.totalViews==masterStructure.flatList.length){
+			$('.canStart').show();
+		}else{
+			$('.cannotStart').show();
+		}
 		loadFAQ();
 	}
 	
