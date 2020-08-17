@@ -839,8 +839,15 @@ progress::-webkit-progress-bar{
                   Example pages Styles
 				  
 -------------------------------------------------------*/	
+
+.pale-highlight{
+	background-color: #e9eccc;
+}
+
+h1 strong{font-weight:900}
+
 /*naration (amira) styles */
-.naration{position:relative;padding-left: 56px;font-style: italic;}
+.naration{position:relative;padding-left: 56px;}
 .naration::before{
 	background:url(g140/icon_DYK.svg);
 	width: 33px;
