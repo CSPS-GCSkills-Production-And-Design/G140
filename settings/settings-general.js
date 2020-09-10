@@ -6,6 +6,6 @@ define({
   "seriesTitle_en": "",
   "seriesTitle_fr": "",
   "addToolboxPage": [{"name_en":"Download course", "name_fr":"Télécharger le cours", "filename_en":"print_version.pdf", "filename_fr":"print_version_fr.pdf"}],
-  showResources: false,
+  showResources: true,
   "editMode": false
 });
